@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    top: 60px;
+}
+
+/*topbar e logo*/
+.topbar{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.topbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.topbar #link-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.topbar .logo img{
+    width: 36px;
+    margin-right: 10px;
+}
+.topbar #login-btn{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.08s;
+    margin-left: 80px;
+}
+.topbar #register-btn{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.08s;
+    background-color:#435e78;
+    color: #fff;
+}
+.topbar #register-btn:hover{
+    background-color:#364b60;
+}
+.topbar #login-btn:hover{
+    background-color: #7b8ea1;
+    color:#fff;
+}
+.topbar .links a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    color: black;
+}
+.topbar .links a:hover{
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    transition: 0.5s;
+}
+
+/*Sezione iniziale*/
+.intro-section{
+    margin-top: 30px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.intro-section #background-img{
+    position:absolute;
+    width: 100%;
+    z-index: -1;
+}
+.intro-section .content {
+    margin-left: 100px;
+    color: #fff;
+}
+.intro-section .content .title{
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.intro-section .content .text-section{
+    font-size: 20px;
+    font-weight: 480;
+    margin-bottom: 4px;
+}
+.intro-section .content button {
+    background: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 30px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.08s;
+}
+.intro-section .content button:hover {
+    color: #fff;
+    background: #364b60;
+}
+  
+/*Descrizione*/
+.description{
+    margin-top:40px;
+}
+.description .columns{
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 20px;
+    max-height: 800px;
+}
+.description .column{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.description .text{
+    font-size: 18px;
+    text-align: justify;
+}
+.description .mid-title{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.description button{
+    margin-top: 60px;
+    background: #435e78;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.08s;
+}
+.description button:hover{
+    background-color:#364b60;
+}
+.description img, .description video {
+    object-fit: cover;
+    height: 240px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.description .card{
+    padding: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.description #up-card{
+    margin-bottom: 20px;
+}
+
+/*Recensioni*/
+.cards-title{
+    font-size: 24px;
+    text-align: center;
+}
+.reviews .columns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    padding:50px;
+    grid-gap:50px;
+}
+.reviews .column{
+    text-align: center;
+}
+.reviews .column img{
+    width: 150px;
+    border-radius: 100%;
+}
+.reviews .column .name{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.reviews .column p{
+    margin-top: 10px;
+    font-style: italic;
+    color: darkslategrey;
+}
+
+/*Altri elementi*/
+.divisore{
+    height: 50px;
+    width: 100%;
+}
+.footer{
+    position:absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #364b60;
+    z-index: -1;
+}
+#footer-text{
+    margin-top: 15px;
+    margin-right: 20px;
+    text-align: right;
+    font-size:15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media only screen and (min-width: 1440px) {
+    .description img {
+        height: 220px;
+    }
+}
