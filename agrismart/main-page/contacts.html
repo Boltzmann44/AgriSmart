@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/agrismart/main-page/styles/style_contacts.css">
+    <link rel="icon" type="image/x-icon" href="/agrismart/img/favicon.ico">
+    <title>AgriSmart - Contatti</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <a id="link-logo" href="../index.html">
+                    <img src="../img/leaf.png">
+                    <h2 style="color: #52923a;">Agri</h2>
+                    <h2 style="color: #435e78;">Smart</h2>
+                </a>
+            </div>
+            <div class="topbar-right">
+                <div class="links">
+                    <a href="platform.html">Piattaforma</a>
+                    <a href="contacts.html">Contatti</a>
+                </div>
+                <div class="access-buttons">
+                    <a href="login.php"><button id="login-btn">Accedi</button></a>
+                    <a href="signup.php"><button id="register-btn">Registrati</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card" id="form-card">
+                    <h2 class="form-title">Contattaci:</h2>
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="efdceae5-4e32-4d93-bf89-7e466c2e96df">
+                        <input type="hidden" name="redirect" value="">
+                        <div class="form-field">
+                            <label>Nome: *</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Azienda:</label>
+                            <input type="text" name="azienda">
+                        </div>
+                        <div class="form-field">
+                            <label>Indirizzo Email: *</label>
+                            <input type="email" name="email" required id="email">
+                        </div>
+                        <br>
+                        <div id="message">Messaggio: *</div>
+                        <textarea rows="8" id="message-text" name="Messaggio" required></textarea>
+                        <div class="submit-zone">
+                            <button id="send-button" type="submit" onclick="">Invia messaggio</button>
+                            <div id="result"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card" id="info-card">
+                    <h2>La nostra assistenza clienti</h2>
+                    <p id="info-text">Un nostro operatore ti risponderà via mail entro 24h. Non esitare a contattarci per ottenere supporto ulteriore.</p>
+                    <img src="/agrismart/img/help.png" alt="foto" style="width:400px;margin-top: 15px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/contacts.js"></script>
+<script>
+    window.onload = function() {
+        document.getElementById("form").reset();
+    };
+</script>
+</html>
