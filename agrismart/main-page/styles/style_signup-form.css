@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Sezione sinistra*/
+.left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+/*Sezione destra*/
+.right {
+    position: absolute;
+    margin-left: 450px;
+    width: calc(100% - 450px);
+    height: 100%;
+}
+#background-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Logo e intro*/
+#link-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position:fixed;
+    z-index: 1;
+    margin-top: 25px;
+    margin-left: 110px;
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+.welcome {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*La form e i suoi campi*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.form-field{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.setup-btn {
+    margin-top: 5px;
+    padding: 10px;
+    background-color:#435e78;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.setup-btn:hover{
+    background-color:#364b60;
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    top: 60px;
+    background: #f5f5f5;
+}
+
+/*Topbar e logo*/
+.topbar{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.topbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.topbar #link-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.topbar .logo img{
+    width: 36px;
+    margin-right: 10px;
+}
+.topbar #login-btn{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 80px;
+}
+.topbar #register-btn{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color:#435e78;
+    color: #fff;
+}
+.topbar #register-btn:hover{
+    background-color:#364b60;
+}
+.topbar #login-btn:hover{
+    background-color: #7b8ea1;
+    color:#fff;
+}
+.topbar .links a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    color: black;
+}
+.topbar .links a:hover{
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    transition: 0.5s;
+}
+
+/*Le due card*/
+.cards{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+}
+.card{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.card #info-card{
+    align-items: center;
+    text-align: center;
+}
+.card #info-text{
+    margin-top: 5px;
+}
+.card .form-field{
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 150px auto;
+    font-weight: 550;
+}
+.card input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+.card textarea{
+    resize: vertical;
+    min-height: 160px;
+}
+.card #message{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.card #message-text{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.card #send-button{
+    padding: 10px;
+    background-color:#435e78;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card #send-button:hover{
+    background-color:#364b60;
+}
+.card .submit-zone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
