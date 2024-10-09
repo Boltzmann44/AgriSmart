@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height: calc(100vh - 60px);
+    background: #f5f5f5;
+}
+
+/*Info button in basso a dx*/
+#info-btn{
+    z-index: 3;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+#info-btn:hover{
+    background-color: #eee;
+}
+
+/*Il popup per aggiungere veicoli*/
+.popup{
+    top:60px;
+    right: 20px;
+    padding: 20px;
+    position: absolute;
+    z-index: 5;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.popup .form-field{
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.popup .form-field input{
+    margin-top: 3px;
+    width: 256px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.popup .form-field select{
+    margin-top: 3px;
+    width: 256px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#popup-photo-field{
+    flex-direction: row;
+    align-items: center;
+}
+#popup-photo-input{
+    margin-left: 15px;
+    max-width: 200px;
+}
+
+/*Topbar e logo*/
+.topbar{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.topbar-logo img{
+    width: 36px;
+    margin-right: 10px;
+}
+.topbar-session{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#topbar-link-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 15px;
+}
+#topbar-logout-btn{
+    background: none; 
+    border: none;     
+    padding: 0;       
+    margin: 0;        
+    cursor: pointer;  
+    color: black;
+    font-size: 19px;
+    margin-left: 25px;
+}
+#topbar-farm-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+#topbar-logout-btn:hover{
+    color: #373636;
+}
+
+/*La barra laterale*/
+.sidebar{
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background:#435e78;
+    overflow-x: hidden;
+}
+.sidebar-button{
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #435e78;
+}
+.sidebar-button a{
+    width: 100%;
+    font-weight: 450;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.sidebar-button a i{
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+.sidebar-button:hover{
+    background-color: #3a5169;
+}
+#sidebar-market-button{
+    box-shadow: inset 0px 10px 6px -10px rgba(0, 0, 0, 0.5);
+}
+#sidebar-equip-button{
+    background-color: #3c536a;
+}
+#sidebar-resources-button{
+    box-shadow: inset 0px -10px 6px -10px rgba(0, 0, 0, 0.5);
+}
+
+/*L'upbar*/
+.upbar{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    padding: 15px 20px;
+    background-color: #fff;
+    align-items: center;
+}
+.upbar-title{
+    font-size:20px;
+    font-weight: 400;
+}
+.upbar-buttons button{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#upbar-add-btn:hover{
+    background-color: #ddd;
+}
+#upbar-remove-btn{
+    color:#fff;
+    background-color: #db060a;
+}
+#upbar-remove-btn:hover{
+    background-color: #c80407;
+}
+
+/*Le card per i veicoli*/
+.cards{
+    width: 100%;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.card-first-part{
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.card-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+.card-photo{
+    object-fit: cover;
+    height: 150px;
+    max-width: 112px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.card-label{
+    font-weight: 500;
+    margin-top: 5px;
+}
+.card-second-part{
+    z-index: 1;
+    left:0;
+    right:0;
+    margin-top: -25px;
+    position: relative;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.card-right-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.error-card{
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #c80407;
+    color: white;
+    box-shadow:  0px 0px 5px #c80407;
+    font-weight: 500;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 4;
+}
+.card-delete {
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%; 
+    background-color: #db060a; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor:pointer;
+    color: #ffffff; 
+    font-size: 13px; 
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    opacity: 70%;
+    font-weight: 800;
+}
+.delete-error{
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor:pointer;
+    font-size: 13px; 
+    position: absolute;
+    background-color: #fefefe; 
+    box-shadow: 0 0px 5px rgba(0,0,0,0.5);
+    color: black;
+    right: -10px;
+    top: -10px;
+    opacity: 90%;
+    font-weight: 600;
+}
+.disabled{
+    display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
