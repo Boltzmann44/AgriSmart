@@ -101,7 +101,7 @@
     align-items: center;
     text-align: center;
 }
-.card #info-text{
+.cards #info-text{
     margin-top: 5px;
 }
 .card .form-field{
