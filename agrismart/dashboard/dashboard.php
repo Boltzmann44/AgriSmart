@@ -164,8 +164,8 @@
                             }
                             $valoriPerc = json_encode(array_values($percentuali));
                             ?>
-                            <canvas id="myChart"></canvas>
                         </div>
+                        <canvas id="myChart"></canvas>
                     </div>
                 </div>
             </div>
