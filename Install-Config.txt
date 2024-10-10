@@ -8,7 +8,7 @@ PER UNA CORRETTA INSTALLAZIONE E CONFIGURAZIONE:
 3. Creare un nuovo database e importare il dump agrismart_db.sql (Utilizzare come nome del db: agrismart_db)
 4. Accedere al sito dall'index (l'accesso a sezioni private è regolato da sessioni quindi non accessibili previa registrazione)
 
-File: https://drive.google.com/file/d/1FXhrKkUIAjAQujkGSM7SZN5QIvCzP19e/view?usp=sharing
+File: https://drive.google.com/file/d/1szwwB99ydfZseklEiFSGHA_-AyOYULEk/view?usp=drive_link
 
 Nota: Controllare nel file /agrismart/main-page/scripts/dashboard.php se le variabili hostname,username,password e dbname coincidono con quelle in utilizzo sulla propria piattaforma phpMyAdmin.
 Nota2: Per provare una esperienza completa accedere con le credenziali: email: agrismartassistance@gmail.com  e passw: Agrismart00
