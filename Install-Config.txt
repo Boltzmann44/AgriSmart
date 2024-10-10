@@ -1,5 +1,5 @@
 AgriSmart è una piattaforma completa per la gestione agricola digitale.
-Per usufruire dell'intera piattaforma AgriSmart non c'è bisogno di scaricare nulla di aggiuntivo. 
+Per usufruire dell'intera piattaforma AgriSmart è necessario scaricare un solo file video (Sezione login e register)
 E' richiesta una connessione ad internet per la corretta visualizzazione di icone ed altri elementi.
 
 PER UNA CORRETTA INSTALLAZIONE E CONFIGURAZIONE:
@@ -7,6 +7,8 @@ PER UNA CORRETTA INSTALLAZIONE E CONFIGURAZIONE:
 2. Per visualizzare correttamente le schermate di accesso e registrazione è necessario scaricare il file prova3.mp4 e inserirlo in /agrismart/img
 3. Creare un nuovo database e importare il dump agrismart_db.sql (Utilizzare come nome del db: agrismart_db)
 4. Accedere al sito dall'index (l'accesso a sezioni private è regolato da sessioni quindi non accessibili previa registrazione)
+
+File: https://drive.google.com/file/d/1FXhrKkUIAjAQujkGSM7SZN5QIvCzP19e/view?usp=sharing
 
 Nota: Controllare nel file /agrismart/main-page/scripts/dashboard.php se le variabili hostname,username,password e dbname coincidono con quelle in utilizzo sulla propria piattaforma phpMyAdmin.
 Nota2: Per provare una esperienza completa accedere con le credenziali: email: agrismartassistance@gmail.com  e passw: Agrismart00
