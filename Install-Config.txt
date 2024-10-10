@@ -1,5 +1,5 @@
 AgriSmart è una piattaforma completa per la gestione agricola digitale.
-Per usufruire dell'intera piattaforma AgriSmart è necessario scaricare un solo file video (Sezione login e register)
+Per usufruire dell'intera piattaforma AgriSmart è necessario scaricare un solo file video (Per la sezione login e register)
 E' richiesta una connessione ad internet per la corretta visualizzazione di icone ed altri elementi.
 
 PER UNA CORRETTA INSTALLAZIONE E CONFIGURAZIONE:
