@@ -4,8 +4,9 @@ E' richiesta una connessione ad internet per la corretta visualizzazione di icon
 
 PER UNA CORRETTA INSTALLAZIONE E CONFIGURAZIONE:
 1. Copiare la cartella agrismart (senza rinominarla) nella cartella htdocs del proprio server
-2. Creare un nuovo database e importare il dump agrismart_db.sql (Utilizzare come nome del db: agrismart_db)
-3. Accedere al sito dall'index (l'accesso a sezioni private è regolato da sessioni quindi non accessibili previa registrazione)
+2. Per visualizzare correttamente le schermate di accesso e registrazione è necessario scaricare il file prova3.mp4 e inserirlo in /agrismart/img
+3. Creare un nuovo database e importare il dump agrismart_db.sql (Utilizzare come nome del db: agrismart_db)
+4. Accedere al sito dall'index (l'accesso a sezioni private è regolato da sessioni quindi non accessibili previa registrazione)
 
 Nota: Controllare nel file /agrismart/main-page/scripts/dashboard.php se le variabili hostname,username,password e dbname coincidono con quelle in utilizzo sulla propria piattaforma phpMyAdmin.
 Nota2: Per provare una esperienza completa accedere con le credenziali: email: agrismartassistance@gmail.com  e passw: Agrismart00
